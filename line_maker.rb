@@ -21,10 +21,12 @@ class LineMaker
   ##
   def first_line(cell_count)
     cells = []
+    
     cell_count.times do |n|
       cells[n] = "0"
       cells[n] = "1" if n = cell_count/2
     end
+    
     cells
   end
 
