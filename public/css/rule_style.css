@@ -1,0 +1,61 @@
+body {
+        background: #fff;
+        font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #444;
+        -webkit-font-smoothing: antialiased; 
+        -webkit-text-size-adjust: 100%;
+}
+
+#title {
+    width:100%;
+     border-bottom: 1px dotted black;
+}
+
+#reset {
+    visibility: hidden;
+}
+
+.container {
+    position:relative;
+	min-width:1720px;
+    padding-left:40px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.warning {
+    color:red;
+}
+
+.row {
+    width:100%;
+	position:absolute;
+	float:left;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.cell {  
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+}
+
+#colors {
+    overflow:auto;
+}
+
+.cell_on, .cell_off {
+    float:left;
+    width:100px;
+}
+.cell1 { 
+    background-color:#13b4ff;
+}
+
+.cell0 {
+    background-color:#ab3fdd;
+}
