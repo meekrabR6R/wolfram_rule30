@@ -31,10 +31,10 @@ describe LineMaker do
     #checks 3rd row with an array of length 11
     it 'should equal ["0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "0"]' do
       first_one = @rule.first_line(11)
-	    second_one = @rule.next_line(first_one)
-	    third_one = @rule.next_line(second_one)
+      second_one = @rule.next_line(first_one)
+      third_one = @rule.next_line(second_one)
 
-	    third_one.should eq ["0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "0"]
+      third_one.should eq ["0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "0"]
     end
 
     #checks final row with an array of length 11
