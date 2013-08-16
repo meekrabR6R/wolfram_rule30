@@ -9,6 +9,7 @@ end
 
 #tests app routes/controllers
 describe 'Routes' do
+  
   include Rack::Test::Methods	
   
   #makes sure index loads correctly
