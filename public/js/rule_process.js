@@ -76,12 +76,12 @@ var RuleThirty = {
     ************************************************************/
 	getNewLine : function(line) {
 		$.ajax({
-				url: '/getline',
-				type: 'post',
-				data: {last_line: JSON.stringify(line)},
-				async: true,
-				success: function(result){ RuleThirty.callBack(result); }
-			});
+			url: '/getline',
+			type: 'post',
+			data: {last_line: JSON.stringify(line)},
+			async: true,
+			success: function(result){ RuleThirty.callBack(result); }
+		});
 	},
 
 	/***********************************************************
@@ -112,7 +112,7 @@ var RuleThirty = {
 		}
 
 
-        if(stopCheck === 1){
+        	if(stopCheck === 1){
 			$('#start').css('visibility', 'hidden');
 			RuleThirty.stop();
 		}
