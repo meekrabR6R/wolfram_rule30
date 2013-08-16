@@ -1,12 +1,12 @@
-rule30
+wolfram_rule30
 ======
 
-Calculates [Wolfram's Rule 30](http://en.wikipedia.org/wiki/Rule_30). A running example can be found [here](http://polar-reaches-9291.herokuapp.com/).
+Calculates [Wolfram's Rule 30](http://en.wikipedia.org/wiki/Rule_30). A running example can be found [here](http://serene-bayou-1556.herokuapp.com/).
 
 
 
 To clone, run
-> git clone https://github.com/meekrabR6R/rule30.git 
+> git clone https://github.com/meekrabR6R/wolfram_rule30.git 
 
 from the console in desired directory.
 
