@@ -19,7 +19,7 @@ post '/' do
     erb :home, locals: { warning: "Only Numbers Please!", array_length: 31 }
   else
     line = LineMaker.new.first_line params[:array_length].to_i
-
+ 	  
  	  if( line.length < 3 || line.length > 75 )
  	    erb :home, locals: { warning: "Length Must be >= 3 And <= 75!", array_length: 31 }
  	  else
