@@ -21,11 +21,11 @@ class LineMaker
   ##
   def first_line(cell_count)
     cells = []
-	cell_count.times do |n|
-	  cells[n] = "0"
-	  cells[n] = "1" if n = cell_count/2
-	 end
-	 cells
+    cell_count.times do |n|
+      cells[n] = "0"
+      cells[n] = "1" if n = cell_count/2
+    end
+    cells
   end
 
   ##
@@ -36,22 +36,20 @@ class LineMaker
   def next_line(last_line)
     next_line = last_line.dup
 
-	( 0..last_line.length-1 ).each do |n|
-
-          #3-cell chunks used to determine on/off status of cells in next line
-          chunk = "0#{last_line[n]}#{last_line[n+1]}" if n == 0
-          chunk = "#{last_line[n-1]}#{last_line[n]}0" if n == last_line.length-1
-          chunk = "#{last_line[n-1]}#{last_line[n]}#{last_line[n+1]}" unless n == 0 || n == last_line.length-1
+    ( 0..last_line.length-1 ).each do |n|
+      #3-cell chunks used to determine on/off status of cells in next line
+      chunk = "0#{last_line[n]}#{last_line[n+1]}" if n == 0
+      chunk = "#{last_line[n-1]}#{last_line[n]}0" if n == last_line.length-1
+      chunk = "#{last_line[n-1]}#{last_line[n]}#{last_line[n+1]}" unless n == 0 || n == last_line.length-1
 	  
-
-	  if( chunk == RULE_SET[3] || chunk === RULE_SET[4] || chunk === RULE_SET[5] || chunk === RULE_SET[6] )
-	    next_line[n] = "1"
-	  else
-	    next_line[n] = "0"
-	  end
-
-	end
-	next_line
+      if( chunk == RULE_SET[3] || chunk === RULE_SET[4] || chunk === RULE_SET[5] || chunk === RULE_SET[6] )
+        next_line[n] = "1"
+      else
+        next_line[n] = "0"
+      end
+      
+    end
+    next_line
   end
 
 end
