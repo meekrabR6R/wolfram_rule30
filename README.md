@@ -1,7 +1,7 @@
 wolfram_rule30
 ======
 
-A Ruby/Javascript app whichalculates [Wolfram's Rule 30](http://en.wikipedia.org/wiki/Rule_30). 
+A Ruby/Javascript app which calculates [Wolfram's Rule 30](http://en.wikipedia.org/wiki/Rule_30). 
 A running example can be found [here](http://serene-bayou-1556.herokuapp.com/).
 
 To clone, run
