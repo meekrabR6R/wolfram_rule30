@@ -12,7 +12,6 @@ var RuleThirty = {
      //variables
      rowCount : 0,
      line : [],
-     timerID : 0,
      stopLoop : 0,
 
      /*****************************************************
