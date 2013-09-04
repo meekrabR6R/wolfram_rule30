@@ -20,8 +20,13 @@ class LineMaker
   # @return: cells - first line (with a single 'on' cell)
   ##
   def first_line(cell_count)
-    cells = Array.new(cell_count, "0")
-    cells[cell_count/2] = "1"
+    cells = []
+    
+    cell_count.times do |n|
+      cells[n] = "0"
+      cells[n] = "1" if n = cell_count/2
+    end
+    
     cells
   end
 
